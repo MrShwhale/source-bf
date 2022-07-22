@@ -71,7 +71,7 @@ alias "c27" "alias skip c28; alias next c13; test_0"
 An example of a loop can be seen in dee.cfg
 
 ### Input buffer
-There is also support for an input buffer that the user enters prior to execution.
+There is also support for an input buffer that the user enters characters into prior to execution.
 
 To use the input buffer, make a copy of buffer.cfg and put characters before the first semicolon of a line, like commands when creating a program. To read a byte from the buffer, exec the buffer file at the start of your program, and use the read command to store the next buffer byte in the currently selected byte.
 
