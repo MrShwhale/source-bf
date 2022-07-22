@@ -2,7 +2,7 @@
 A Brainfuck interpreter written in the Source Engine console
 
 ## How to install
-Simply place the brainf folder into your cfg folder for your source game of choice.
+Simply unzip the release (or download the source code) and place the brainf folder into your cfg folder for your source game of choice.
 
 Then, open the in-game console and run the "exec brainf/brainf" command
 
