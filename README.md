@@ -60,11 +60,14 @@ alias "c<x|y>" "alias skip c<y+1>; alias next c<x+1>; test_0"
 This line is used in place of both the start and end loop commands, where the start of the loop is at command x and the end is at command y.
 
 For example, a loop that starts on command 12 and ends on command 27 would look like this:
-
+<pre><code>
 //c0-11
-alias "c12" "alias skip c<28>; alias next c<13>; test_0"
+alias "c12" "alias skip c28; alias next c13; test_0"
 //c13-26
-alias "c27" "alias skip c<28>; alias next c<13>; test_0"
+alias "c27" "alias skip c28; alias next c13; test_0"
 //c28-end
+</code></pre>
+
+An example of a loop can be seen in dee.cfg
 
 ### Input buffer
