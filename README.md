@@ -17,7 +17,7 @@ After writing the program
 
 See dee.cfg for a full example of this. 
 
-### Commands
+### Basic commands
 Each command corresponds to a brainfuck command. 
 Alternate names for the commands were used to avoid conflict with user input.
 
@@ -46,4 +46,9 @@ Outputs a single ASCII character to the console, followed by a newline.
 
 Unprintable characters (such as ASCII SYN, DEL), white space, as well as the ; and " characters will print an empty line to the console. Trying to print characters with a higher than 127 will print 5 question marks since the engine cannot print them. Equivalent to '.' command in brainfuck.
 
-###  Loop command
+#### User input
+All single characters are commands that set the current bit to the ASCII value of that character.
+
+Has support for any non-whitespace printable character with an ASCII value lower than 128, other than ;, +, - and ". 
+
+###  Loop command and input buffer 
