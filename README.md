@@ -44,6 +44,6 @@ If the current pointer is the first (default: 0), prints an error to console, bu
 #### out
 Outputs a single ASCII character to the console, followed by a newline. 
 
-Unprintable characters (such as ASCII SYN, DEL), white space, as well as the ; and " characters will print an empty line to the console. Trying to print characters with a higher than 127 will print 5 question marks since the engine cannot print them.
+Unprintable characters (such as ASCII SYN, DEL), white space, as well as the ; and " characters will print an empty line to the console. Trying to print characters with a higher than 127 will print 5 question marks since the engine cannot print them. Equivalent to '.' command in brainfuck.
 
 ###  Loop command
