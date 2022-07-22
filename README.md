@@ -51,4 +51,20 @@ All single characters are commands that set the current bit to the ASCII value o
 
 Has support for any non-whitespace printable character with an ASCII value lower than 128, other than ;, +, - and ". 
 
-###  Loop command and input buffer 
+### Loop command 
+Loop commands are done slightly differently since this is the simplest implementation I have come up with.
+Basically, instead of the usual "alias "c<x>" "<command>; airgap; c<x+1>"", loops follow different syntax:
+
+alias "c<x|y>" "alias skip c<y+1>; alias next c<x+1>; test_0"
+
+This line is used in place of both the start and end loop commands, where the start of the loop is at command x and the end is at command y.
+
+For example, a loop that starts on command 12 and ends on command 27 would look like this:
+
+//c0-11
+alias "c12" "alias skip c<28>; alias next c<13>; test_0"
+//c13-26
+alias "c27" "alias skip c<28>; alias next c<13>; test_0"
+//c28-end
+
+### Input buffer
