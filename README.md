@@ -1,5 +1,5 @@
 # source-bf
-A Brainfuck interpreter written in the Source Engine console
+A P'' (also known as brainf) interpreter written in the Source Engine console
 
 ## How to install
 Simply unzip the release (or download the source code) and place the brainf folder into your cfg folder for your source game of choice.
