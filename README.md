@@ -20,33 +20,33 @@ After writing the program
 See dee.cfg for a full example of this. 
 
 ### Basic commands
-Each command corresponds to a brainfuck command. 
+Each command corresponds to a brainf command. 
 Alternate names for the commands were used to avoid conflict with user input.
 
 #### inc
 Increases the value of the byte the data pointer is at by 1. 
 
-Overflows to 0 if the byte is 255. Equivalent the '+' command in brainfuck.
+Overflows to 0 if the byte is 255. Equivalent the '+' command in brainf.
 
 #### dec
 Decrement the value of the byte the data pointer is at by 1. 
 
-Overflows to 255 if the byte is 0. Equivalent the '-' command in brainfuck.
+Overflows to 255 if the byte is 0. Equivalent the '-' command in brainf.
 
 #### ptr+
 Increment the data pointer, making it point to the data cell with a value one higher.
 
-If the current pointer is the last (default: 511), prints an error to console, but does not stop execution. Equivalent the '>' command in brainfuck.
+If the current pointer is the last (default: 511), prints an error to console, but does not stop execution. Equivalent the '>' command in brainf.
 
 #### ptr-
 Decrement the data pointer, making it point to the data cell with a value one lower.
 
-If the current pointer is the first (default: 0), prints an error to console, but does not stop execution. Equivalent the '<' command in brainfuck.
+If the current pointer is the first (default: 0), prints an error to console, but does not stop execution. Equivalent the '<' command in brainf.
 
 #### out
 Outputs a single ASCII character to the console, followed by a newline. 
 
-Unprintable characters (such as ASCII SYN, DEL), white space, as well as the ; and " characters will print an empty line to the console. Trying to print characters with a higher than 127 will print 5 question marks since the engine cannot print them. Equivalent to '.' command in brainfuck.
+Unprintable characters (such as ASCII SYN, DEL), white space, as well as the ; and " characters will print an empty line to the console. Trying to print characters with a higher than 127 will print 5 question marks since the engine cannot print them. Equivalent to '.' command in brainf.
 
 #### User input
 All single characters are commands that set the current bit to the ASCII value of that character.
